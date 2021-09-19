@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Crypto Exchange</title>
+</head>
+<body>
+    
+    <div class="wrap flex justify-center items-center h-screen">
+        <div class="container mx-auto px-2">
+            <div class="exchange">
+                <div class="exchange_top mb-14">
+                    <h6 class="mb-4 font-light text-4xl md:text-5xl">Crypto Exchange</h6>
+                    <p class=" text-xl">Exchange fast and easy</p>
+                </div>
+                <div class="exchange_convert flex flex-col mb-12 md:flex-row md:justify-between md:items-center md:mb-8">
+                    <div class="select sm:w-full mb-5 md:w-2/5 md:mb-0">
+                        <div class="select_item w-full">
+                            <div class="select_item_top w-full flex items-center">
+                                <div class="select_item_top_button w-full flex py-2 pl-4 pr-3">
+                                    <!-- <span class="select_item_top_button_current w-2/3">000</span> -->
+                                    <input type="number" class="w-2/4 sm:w-3/5" id="inputEntrance" value="">
+                                    <div class="select_item_top_button_img flex justify-center w-2/4 sm:w-2/5" data-parth="entrance">
+                                        <!--выводятся значение-->
+                                    </div>
+                                </div>
+                                <div class="select_item_top_search w-full">
+                                    <input type="search" class="py-2 px-4 search" placeholder="Search">
+                                </div>
+                                <div class="select_item_top_arrow">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <ul class="select_item_list w-full">
+                                <li class="select_item_list_item flex p-4">
+                                    <div class="select_item_list_item_info flex mr-4 w-1/6 sm:w-1/6 md:w-2/6 lg:w-1/5">
+                                        <img src="img/icon/bitcoin.svg" alt="Bitcoin" class="mr-3 md:mr-4">
+                                        <h6 data-parth="111">BTC</h6>
+                                    </div>
+                                    <p data-parth="Bitcoin">Bitcoin</p>
+                                </li>
+                                <li class="select_item_list_item flex p-4">
+                                    <div class="select_item_list_item_info flex mr-4 w-1/6 sm:w-1/6 md:w-2/6 lg:w-1/5">
+                                        <img src="img/icon/eth.svg" alt="Ethereum" class="mr-3 md:mr-4">
+                                        <h6 data-parth="222">ETH</h6>
+                                    </div>
+                                    <p data-parth="Ethereum">Ethereum</p>
+                                </li>
+                                <li class="select_item_list_item flex p-4">
+                                    <div class="select_item_list_item_info flex mr-4 w-1/6 sm:w-1/6 md:w-2/6 lg:w-1/5">
+                                        <img src="img/icon/xmr.svg" alt="Monero" class="mr-3 md:mr-4">
+                                        <h6 data-parth="333">XMR</h6>
+                                    </div>
+                                    <p data-parth="Monero">Monero</p>
+                                </li>
+                                <li class="select_item_list_item flex p-4">
+                                    <div class="select_item_list_item_info flex mr-4 w-1/6 sm:w-1/6 md:w-2/6 lg:w-1/5">
+                                        <img src="img/icon/ltc.svg" alt="Litecoin" class="mr-3 md:mr-4">
+                                        <h6 data-parth="444">LTC</h6>
+                                    </div>
+                                    <p data-parth="Litecoin">Litecoin</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="exchange_convert_button mb-5 transform rotate-90 self-end md:mb-0 md:rotate-0 md:self-center">
+                        <img src="img/icon/arrow.svg" alt="convert" class="">
+                    </button>
+                    <div class="select sm:w-full md:w-2/5">
+                        <div class="select_item w-full">
+                            <div class="select_item_top w-full flex items-center">
+                                <div class="select_item_top_button w-full flex py-2 pl-4 pr-3">
+                                    <input type="number" class="w-2/4 sm:w-3/5" id="inputOutput" value="" disabled>
+                                    <div class="select_item_top_button_img flex justify-center w-2/4 sm:w-2/5" data-parth="output">
+                                        <!--выводятся значение-->
+                                    </div>
+                                </div>
+                                <div class="select_item_top_search w-full">
+                                    <input type="search" class="py-2 px-4 search" placeholder="Search">
+                                </div>
+                                <div class="select_item_top_arrow">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <ul class="select_item_list w-full">
+                                <li class="select_item_list_item flex p-4">
+                                    <div class="select_item_list_item_info flex mr-4 w-1/6 sm:w-1/6 md:w-2/6 lg:w-1/5">
+                                        <img src="img/icon/bitcoin.svg" alt="Bitcoin" class="mr-3 md:mr-4">
+                                        <h6 data-parth="111">BTC</h6>
+                                    </div>
+                                    <p class="w-3/5">Bitcoin</p>
+                                </li>
+                                <li class="select_item_list_item flex p-4">
+                                    <div class="select_item_list_item_info flex mr-4 w-1/6 sm:w-1/6 md:w-2/6 lg:w-1/5">
+                                        <img src="img/icon/eth.svg" alt="Ethereum" class="mr-3 md:mr-4">
+                                        <h6 data-parth="222">ETH</h6>
+                                    </div>
+                                    <p data-parth="Ethereum">Ethereum</p>
+                                </li>
+                                <li class="select_item_list_item flex p-4">
+                                    <div class="select_item_list_item_info flex mr-4 w-1/6 sm:w-1/6 md:w-2/6 lg:w-1/5">
+                                        <img src="img/icon/xmr.svg" alt="Monero" class="mr-3 md:mr-4">
+                                        <h6 data-parth="333">XMR</h6>
+                                    </div>
+                                    <p data-parth="Monero">Monero</p>
+                                </li>
+                                <li class="select_item_list_item flex p-4">
+                                    <div class="select_item_list_item_info flex mr-4 w-1/6 sm:w-1/6 md:w-2/6 lg:w-1/5">
+                                        <img src="img/icon/ltc.svg" alt="Litecoin" class="mr-3 md:mr-4">
+                                        <h6 data-parth="444">LTC</h6>
+                                    </div>
+                                    <p data-parth="Litecoin">Litecoin</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="exchange_adress">
+                    <label for="adress">Your Ethereum address</label>
+                    <div class="exchange_adress_item w-full flex flex-col md:flex-row md:justify-between mt-3">
+                        <input type="email" id="adress" class="w-full mb-4 md:mb-0 md:w-3/4 rounded">
+                        <button type="submit" class="w-full py-4 sm:w-3/5 md:w-1/5 md:py-0 rounded">Exchange</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>
